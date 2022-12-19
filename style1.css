@@ -49,7 +49,6 @@ h1 {
 .links {
   display: flex;
   justify-content: space-between;
-  padding: auto;
 }
 .link {
   color: white;
@@ -89,16 +88,22 @@ a:hover {
   grid-row: 3/4;
   color: white;
 }
-.sidebar-header h2 {
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1/2;
   grid-row: 2/3;
-  text-align: center;
   text-transform: capitalize;
-  background-color: #003b6f;
+  background-color: red;
   color: white;
   margin: 0;
   font-size: 30px;
   padding: 10px 10px;
+  border: none;
+  margin: 0;
+  
+  
 }
 ul.list {
   list-style-type: none;
@@ -110,16 +115,21 @@ ul.list {
   list-style: none;
 }
 li {
-  outline: 2px solid #003b6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    outline: 2px solid #003b6f;
   width: 100%;
   height: 100%;
-  text-align: center;
   margin-top: 2px;
   font-size: 20px;
+
 }
 .list:first-child {
   margin-top: -2px;
 }
+.sdebar-header::before{border:0;}
+
 /* CONTENT */
 .content {
   grid-column: 2/3;
